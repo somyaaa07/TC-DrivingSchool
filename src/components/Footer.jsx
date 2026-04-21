@@ -46,7 +46,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-4 md:gap-8 lg:grid-cols-4 gap-4">
             {Object.entries(LINKS).map(([category, links]) => (
               <div key={category}>
-                <p className="font-poppins text-[11px] md:text-[10px] tracking-[0.18em] uppercase text-fg/38 mb-5">
+                <p className="font-poppins text-[11px] md:text-[10px] xl:text-[13px] lg:text-[13px] tracking-[0.18em] uppercase text-fg/38 mb-5">
                   {category}
                 </p>
                 <ul className="flex flex-col gap-3">
@@ -54,7 +54,7 @@ export default function Footer() {
                     <li key={link}>
                       <a
                         href="#"
-                        className="group flex items-center gap-1 font-poppins md:text-[10px] text-sm text-fg/55 hover:text-fg transition-colors duration-200"
+                        className="group flex items-center gap-1 font-poppins md:text-[10px] xl:text-[13px] lg:text-[13px] text-sm text-fg/55 hover:text-fg transition-colors duration-200"
                       >
                         {link}
                       </a>

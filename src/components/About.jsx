@@ -44,7 +44,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-24 px-6 md:px-12 relative overflow-hidden"
+      className="py-24 px-6 md:px-8 lg:px-12 xl:px-12 relative overflow-hidden"
       style={{ backgroundColor: "#3B3B3B" }}
     >
       {/* Subtle background texture circles */}
@@ -111,23 +111,18 @@ export default function About() {
             {/* Body text */}
             <motion.p
               variants={fadeUp}
-              className="font-poppins text-md leading-[1.5em]"
+              className="font-poppins text-md leading-[1.5em] md:text-[12px] lg:text-[13px] xl:text-lg"
               style={{ color: "rgba(255,255,255,0.6)" }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              necessitatibus perspiciatis sed consectetur laborum rem optio amet
-              doloremque obcaecati eveniet iure doloribus incidunt tempore
-              pariatur deserunt architecto, veritatis beatae?
+          TC Driving School is dedicated to helping learners become confident, safe, and responsible drivers. With experienced instructors and a structured training approach, we provide both practical driving lessons and essential knowledge of traffic rules.
             </motion.p>
 
             <motion.p
               variants={fadeUp}
-              className="font-poppins text-md leading-[1.5em]"
+              className="font-poppins text-sm leading-[1.5em] md:text-[12px] lg:text-[13px] xl:text-lg"
               style={{ color: "rgba(255,255,255,0.6)" }}
             >
-              Dolorem animi modi ullam facere possimus iure unde rem accusamus
-              numquam velit, vitae nesciunt nisi ipsa suscipit voluptatem cum
-              non adipisci exercitationem.
+          Whether you are a beginner or looking to improve your driving skills, our personalized guidance and flexible schedules ensure a smooth learning experience. At TC Driving School, our focus is not just on teaching you how to drive, but on building confidence and road awareness for a lifetime of safe driving.
             </motion.p>
 
          

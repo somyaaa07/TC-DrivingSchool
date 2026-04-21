@@ -35,7 +35,7 @@ const FAQS = [
   },
   {
     q: 'Which areas do you cover?',
-    a: 'Our primary centre is in Sector 18, Noida. We also operate in Greater Noida West, Indirapuram (Ghaziabad), and Vasundhara — each covering a 15 km training radius.',
+    a: 'Our primary centre is in Greater Noida, Noida. We also operate in Greater Noida West — each covering a 15 km training radius.',
   },
 ];
 

@@ -8,9 +8,8 @@ const TESTIMONIALS = [
     name: "Ananya Verma",
     role: "Student, Delhi University",
     rating: 5,
-    quote:
-      "Apex Drive completely changed how I felt behind the wheel. I used to be terrified of traffic — now I drive on the expressway with full confidence. Rahul sir is endlessly patient.",
-    course: "Confidence Course",
+    quote:  'TC car Driving School completely changed how I felt behind the wheel. I used to be terrified of traffic — now I drive on the expressway with full confidence. Rahul sir is endlessly patient.',
+    course: 'Confidence Course',
   },
   {
     name: "Karan Bhatia",
@@ -70,7 +69,7 @@ export default function Testimonials() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 "
         >
           {TESTIMONIALS.map(({ name, role, rating, quote, course }) => (
             <motion.article
@@ -78,7 +77,7 @@ export default function Testimonials() {
               variants={card}
               whileHover={{ y: -8 }}
               transition={{ duration: 0.24, ease: "easeOut" }}
-              className="group flex flex-col gap-6 p-8 md:p-2 rounded-xl bg-bg border border-fg/15 hover:border-fg cursor-default transition-colors duration-300"
+              className="group flex flex-col gap-6 p-8 md:p-4 rounded-xl bg-bg border border-fg/15 hover:border-fg cursor-default transition-colors duration-300"
             >
               {/* Big quote mark */}
               <Quote size={30} strokeWidth={1} className="text-fg/12" />
@@ -108,9 +107,9 @@ export default function Testimonials() {
               <div className="border-t border-fg/10" />
 
               {/* Author */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 mb-3 px-3">
                 <div
-                  className="w-10 h-10 rounded-full flex items-center justify-center shrink-0"
+                  className="w-10 h-10 md:h-8 md:w-8 rounded-full flex items-center justify-center shrink-0"
                   style={{ backgroundColor: "#3B3B3B" }}
                 >
                   <span className="font-oswald font-bold text-sm text-bg">
@@ -121,10 +120,10 @@ export default function Testimonials() {
                   </span>
                 </div>
                 <div>
-                  <p className="font-oswald font-semibold text-base uppercase tracking-wide text-fg">
+                  <p className="font-oswald font-semibold text-base md:text-[13px] uppercase tracking-wide text-fg">
                     {name}
                   </p>
-                  <p className="font-poppins text-xs text-fg/45 mt-0.5">
+                  <p className="font-poppins text-xs text-fg/45 md:text-[10px] mt-0.5">
                     {role}
                   </p>
                 </div>

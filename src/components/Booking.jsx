@@ -26,10 +26,14 @@ const SLOTS = [
 ];
 
 const CONTACT_INFO = [
-  { label: "Phone", value: "+91 98765 43210" },
-  { label: "Email", value: "hello@apexdrive.in" },
-  { label: "Address", value: "Sector 18, Noida — & 3 more centres" },
-  { label: "Hours", value: "Mon–Sat · 6 AM to 8 PM" },
+  { label: "Phone", value: "+91 9319913232" },
+  { label: "Email", value: "-info@tcdrivingschool.com" },
+  {
+    label: "Address",
+    value:
+      "Chhoti milak market, Techzone 4, Amrapali Dream Valley, Greater Noida, Uttar Pradesh",
+  },
+  { label: "Hours", value: "Mon–Sat · 5 AM to 8 PM" },
 ];
 
 function Field({ label, icon: Icon, children }) {

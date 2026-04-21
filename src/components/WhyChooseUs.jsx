@@ -39,7 +39,7 @@ const item = {
 export default function WhyChooseUs() {
   return (
     <section id="why-choose-us" className="bg-bg py-20 px-6 md:px-12">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
         {/* ── Header ── */}
         <motion.div

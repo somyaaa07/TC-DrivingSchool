@@ -41,8 +41,8 @@ const card = {
 
 export default function Instructors() {
   return (
-    <section id="instructors" className="bg-bg py-20 px-6 md:px-12">
-      <div className="max-w-6xl mx-auto">
+    <section id="instructors" className="bg-bg py-20 px-6 md:px-8 lg:px-12 xl:px-20 ">
+      <div className="max-w-7xl mx-auto">
 
         {/* ── Header ── */}
         <motion.div
@@ -87,15 +87,15 @@ export default function Instructors() {
               {/* Avatar row */}
               <div className="flex items-center gap-5">
                 <div
-                  className="w-[72px] h-[72px] rounded-full flex items-center justify-center shrink-0 border-2 border-fg"
+                  className="w-[72px] h-[72px] md:h-[50px] md:w-[50px] rounded-full flex items-center justify-center shrink-0 border-2 border-fg"
                   style={{ backgroundColor: '#3B3B3B' }}
                 >
-                  <span className="font-oswald font-bold text-2xl tracking-wider text-bg">
+                  <span className="font-oswald font-bold text-2xl md:text-[16px] tracking-wider text-bg">
                     {initials}
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-oswald font-semibold text-xl uppercase tracking-wide text-fg">
+                  <h3 className="font-oswald font-semibold text-xl md:text-[14px] uppercase tracking-wide text-fg">
                     {name}
                   </h3>
                   <p className="font-poppins text-xs text-fg/45 mt-1">{title}</p>
@@ -107,11 +107,11 @@ export default function Instructors() {
               {/* Stats */}
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="font-oswald text-2xl font-bold text-fg">{exp}</p>
+                  <p className="font-oswald text-2xl md:text-xl font-bold text-fg">{exp}</p>
                   <p className="font-poppins text-xs text-fg/45 mt-1">Experience</p>
                 </div>
                 <div>
-                  <p className="font-oswald text-2xl font-bold text-fg">{sessions}</p>
+                  <p className="font-oswald text-2xl md:text-xl font-bold text-fg">{sessions}</p>
                   <p className="font-poppins text-xs text-fg/45 mt-1">Sessions</p>
                 </div>
               </div>

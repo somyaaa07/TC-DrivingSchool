@@ -23,16 +23,17 @@ const STATS = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col bg-bg">
-
-     
-
-      {/* ════ Hero body ════ */}
-      <div className="flex-1 flex items-center justify-center max-w-7xl mx-auto w-full px-6 md:px-12 py-16 bg-cover bg-no-repeat bg-center" style={
+    <section className="relative h-full w-full flex flex-col bg-cover bg-no-repeat bg-center"
+    style={
         {
             backgroundImage:`url("/Banne.png")`
         }
       }>
+
+     <div className='absolute inset-0 bg-[#000000]/10'/>
+
+      {/* ════ Hero body ════ */}
+      <div className="flex-1 flex items-center justify-center max-w-7xl mx-auto w-full px-6 md:px-12 py-16 " >
         
         <div className="grid  gap-16 items-center  w-full">
 
