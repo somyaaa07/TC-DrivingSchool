@@ -8,7 +8,7 @@ const TESTIMONIALS = [
     name:   'Ananya Verma',
     role:   'Student, Delhi University',
     rating: 5,
-    quote:  'Apex Drive completely changed how I felt behind the wheel. I used to be terrified of traffic — now I drive on the expressway with full confidence. Rahul sir is endlessly patient.',
+    quote:  'TC car Driving School completely changed how I felt behind the wheel. I used to be terrified of traffic — now I drive on the expressway with full confidence. Rahul sir is endlessly patient.',
     course: 'Confidence Course',
   },
   {

@@ -44,7 +44,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-24 px-6 md:px-12 relative overflow-hidden"
+      className="py-24 px-6 md:px-8 lg:px-12 xl:px-12 relative overflow-hidden"
       style={{ backgroundColor: "#3B3B3B" }}
     >
       {/* Subtle background texture circles */}
@@ -111,7 +111,7 @@ export default function About() {
             {/* Body text */}
             <motion.p
               variants={fadeUp}
-              className="font-poppins text-md leading-[1.5em]"
+              className="font-poppins text-md leading-[1.5em] md:text-[12px] lg:text-[13px] xl:text-lg"
               style={{ color: "rgba(255,255,255,0.6)" }}
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
@@ -122,7 +122,7 @@ export default function About() {
 
             <motion.p
               variants={fadeUp}
-              className="font-poppins text-md leading-[1.5em]"
+              className="font-poppins text-sm leading-[1.5em] md:text-[12px] lg:text-[13px] xl:text-lg"
               style={{ color: "rgba(255,255,255,0.6)" }}
             >
               Dolorem animi modi ullam facere possimus iure unde rem accusamus
