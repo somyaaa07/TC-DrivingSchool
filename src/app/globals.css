@@ -1,26 +1,72 @@
+/* ─────────────────────────────────────────────
+   Tailwind CSS v4 — CSS-based configuration
+   No tailwind.config.js required
+───────────────────────────────────────────── */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* ── Brand palette — ONLY these two colours ── */
+  --color-bg:  #FAFAEF;
+  --color-fg:  #3B3B3B;
+
+  /* ── Typography — mapped from next/font CSS vars ── */
+  --font-oswald:  var(--next-font-oswald), "Oswald", sans-serif;
+  --font-poppins: var(--next-font-poppins), "Poppins", sans-serif;
+
+  /* ── Spacing extras ── */
+  --spacing-section: 5rem;
+
+  /* ── Easing ── */
+  --ease-premium: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ─── Reset & base ─── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FAFAEF;
+  color: #3B3B3B;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+  background-color: #FAFAEF;
+  color: #3B3B3B;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-oswald);
+}
+
+/* ─── Thin scrollbar ─── */
+::-webkit-scrollbar        { width: 3px; }
+::-webkit-scrollbar-track  { background: #FAFAEF; }
+::-webkit-scrollbar-thumb  { background: #3B3B3B; }
+
+/* ─── Input / textarea reset ─── */
+input, textarea, select {
+  outline: none;
+  background: transparent;
+  font-family: var(--font-poppins);
+}
+
+/* ─── Custom utility for section spacing ─── */
+@utility section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  @media (width >= 48rem) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
