@@ -137,12 +137,12 @@ export default function Pricing() {
 
                 {/* Price */}
                 <div className="mb-5">
-                  <span
+                  {/* <span
                     className="font-oswald font-light text-5xl md:text-3xl "
                     style={{ color: highlighted ? "#FAFAEF" : "#3B3B3B" }}
                   >
                     {price}
-                  </span>
+                  </span> */}
                   <span
                     className="font-poppins text-xs ml-2"
                     style={{

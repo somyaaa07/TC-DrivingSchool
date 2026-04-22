@@ -135,9 +135,7 @@ export default function Courses() {
                 <h3 className="font-oswald font-bold text-2xl sm:text-3xl uppercase tracking-wide text-fg">
                   {title}
                 </h3>
-                <p className="font-oswald text-3xl sm:text-4xl font-light text-fg sm:mt-1">
-                  {price}
-                </p>
+               
               </div>
 
               {/* Divider */}

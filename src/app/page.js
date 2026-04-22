@@ -9,8 +9,8 @@ import Pricing      from '../components/Pricing';
 import Booking      from '../components/Booking';
 import FAQ          from '../components/FAQ';
 import Footer       from '../components/Footer';
-import Navbar from '@/components/Navbar';
-import About from '@/components/About';
+import Navbar from '../components/Navbar';
+import About from '../components/About';
 
 export default function Home() {
   return (
