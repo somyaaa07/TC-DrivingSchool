@@ -8,8 +8,9 @@ const TESTIMONIALS = [
     name: "Ananya Verma",
     role: "Student, Delhi University",
     rating: 5,
-    quote:  'TC car Driving School completely changed how I felt behind the wheel. I used to be terrified of traffic — now I drive on the expressway with full confidence. Rahul sir is endlessly patient.',
-    course: 'Confidence Course',
+    quote:
+      "TC car Driving School completely changed how I felt behind the wheel. I used to be terrified of traffic — now I drive on the expressway with full confidence. Rahul sir is endlessly patient.",
+    course: "Confidence Course",
   },
   {
     name: "Karan Bhatia",
@@ -95,7 +96,7 @@ export default function Testimonials() {
               </div>
 
               {/* Quote text */}
-              <p className="font-poppins text-sm  md:text-[10px] leading-relaxed text-fg/65 flex-1">
+              <p className="font-poppins text-sm  md:text-[10px] lg:text-[15px] leading-relaxed text-fg/65 flex-1">
                 "{quote}"
               </p>
 

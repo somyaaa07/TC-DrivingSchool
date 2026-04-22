@@ -162,10 +162,12 @@ export default function Courses() {
               </ul>
 
               {/* CTA */}
-              <Link href="/#contact" size="sm" className="w-full justify-center">
+              <Link href="#contact">
+              <Button  size="sm" className="w-full justify-center">
                 <span className="flex items-center justify-center gap-2">
                   Enrol Now <ArrowRight size={13} />
                 </span>
+              </Button>
               </Link>
             </motion.article>
           ))}

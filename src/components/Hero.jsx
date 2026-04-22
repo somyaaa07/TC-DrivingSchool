@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 /* ── Shared entrance variant ── */
 const fadeUp = (delay = 0) => ({
@@ -53,25 +54,31 @@ export default function Hero() {
               Road.
             </motion.h1>
 
-           <motion.p
-  {...fadeUp(0.32)}
-  className="text-black  font-poppins text-base leading-relaxed  max-w-sm mb-10"
->
-  Train with RTO-certified instructors inside modern dual-control
-  vehicles. Confidence, precision, and safety — every session.
-</motion.p>
+            <motion.p
+              {...fadeUp(0.32)}
+              className="text-black  font-poppins text-base leading-relaxed  max-w-sm mb-10"
+            >
+              Train with RTO-certified instructors inside modern dual-control
+              vehicles. Confidence, precision, and safety — every session.
+            </motion.p>
 
             <motion.div
               {...fadeUp(0.42)}
               className="flex flex-wrap items-center  gap-5"
             >
-              <Button size="lg">Start Your Journey</Button>
-              <a
-                href="#courses"
-                className="font-poppins text-sm tracking-[0.14em] uppercase text-fg/90
-                           underline underline-offset-4 hover:text-fg transition-colors duration-200"
-              >
-                View Courses
+              <Link href="#contact">
+                {" "}
+                <Button
+                  size="lg"
+                  className="whitespace-nowrap  text-sm sm:text-base !tracking-[0.05em] sm:tracking-[0.18em]"
+                >
+                  Start Your Journey
+                </Button>
+              </Link>
+              <a href="#courses">
+                <Button size="lg" className=" text-sm sm:text-base">
+                  View Courses
+                </Button>
               </a>
             </motion.div>
           </div>
