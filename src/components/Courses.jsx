@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 import Button from '../ui/Button';
 
 const COURSES = [
@@ -161,11 +162,11 @@ export default function Courses() {
               </ul>
 
               {/* CTA */}
-              <Button size="sm" className="w-full justify-center">
+              <Link href="/#contact" size="sm" className="w-full justify-center">
                 <span className="flex items-center justify-center gap-2">
                   Enrol Now <ArrowRight size={13} />
                 </span>
-              </Button>
+              </Link>
             </motion.article>
           ))}
         </motion.div>
