@@ -104,7 +104,7 @@ export default function Footer() {
         {/* ════ Bottom bar ════ */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-fg/10">
           <p className="font-poppins text-xs text-fg/38">
-            © {year} Apex Drive Academy Pvt. Ltd. · All rights reserved.
+            © {year} TC Driving School· All rights reserved.
           </p>
           <div className="flex gap-6">
             {["Privacy", "Terms", "Cookies"].map((item) => (

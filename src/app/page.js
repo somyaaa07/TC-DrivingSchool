@@ -11,6 +11,7 @@ import FAQ          from '../components/FAQ';
 import Footer       from '../components/Footer';
 import Navbar from '../components/Navbar';
 import About from '../components/About';
+import FloatingSocialButtons from '../components/FloatngSocialButtons';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <Pricing />
       <Booking />
       <FAQ />
+      <FloatingSocialButtons/>
       <Footer />
     </main>
   );
