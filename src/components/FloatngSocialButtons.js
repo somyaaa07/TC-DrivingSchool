@@ -1,5 +1,5 @@
 import React from "react";
-import { FaWhatsapp, FaPhone } from "react-icons/fa";
+import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 import SocialButton from "./SocialButton";
 
 export default function FloatingSocialButtons() {
@@ -19,7 +19,7 @@ export default function FloatingSocialButtons() {
         href="tel:+919319913232"
         title="Call Now"
         colorClass="bg-blue-500 hover:bg-blue-600"
-        icon={<FaPhone size={24} />}
+        icon={<FaPhoneAlt size={24} />}
       />
 
     </div>
