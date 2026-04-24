@@ -115,12 +115,12 @@ export default function FAQ() {
             </h2>
           </div>
           <p className="font-poppins text-sm leading-relaxed text-fg/55 max-w-xs md:pt-14">
-            Can't find an answer?{' '}
+            Cant find an answer?{' '}
             <a
               href="mailto:hello@apexdrive.in"
               className="underline underline-offset-4 text-fg/75 hover:text-fg transition-colors duration-200"
             >
-              hello@apexdrive.in
+              info@tcdrivingschools.in
             </a>
           </p>
         </motion.div>
