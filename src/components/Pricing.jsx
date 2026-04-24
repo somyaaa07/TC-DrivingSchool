@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 const PLANS = [
   {
@@ -195,23 +196,27 @@ export default function Pricing() {
 
                 {/* CTA */}
                 {highlighted ? (
-                  <button
-                    className="w-full py-3.5 md:py-3 font-poppins text-sm md:text-[12px] font-medium tracking-[0.18em] uppercase border cursor-pointer transition-opacity duration-200 hover:opacity-80"
-                    style={{
-                      backgroundColor: "#FAFAEF",
-                      color: "#3B3B3B",
-                      borderColor: "#FAFAEF",
-                    }}
-                  >
-                    Get Started
-                  </button>
+                  <Link href="#contact">
+                    <button
+                      className="w-full py-3.5 md:py-3 font-poppins text-sm md:text-[12px] font-medium tracking-[0.18em] uppercase border cursor-pointer transition-opacity duration-200 hover:opacity-80"
+                      style={{
+                        backgroundColor: "#FAFAEF",
+                        color: "#3B3B3B",
+                        borderColor: "#FAFAEF",
+                      }}
+                    >
+                      Get Started
+                    </button>
+                  </Link>
                 ) : (
-                  <Button
-                    size="sm"
-                    className="w-full justify-center md:text-nowrap"
-                  >
-                    Get Started
-                  </Button>
+                  <Link href="#contact">
+                    <Button
+                      size="sm"
+                      className="w-full justify-center md:text-nowrap"
+                    >
+                      Get Started
+                    </Button>
+                  </Link>
                 )}
               </motion.article>
             ),
